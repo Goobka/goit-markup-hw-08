@@ -1,0 +1,26 @@
+.page-body {
+  padding-top: 80px;
+
+  background-color: $primary-bg-color;
+  color: $primary-text-color;
+
+  font-family: Roboto, sans-serif;
+  letter-spacing: 0.03em;
+}
+.header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  min-width: 80px;
+  z-index: 1;
+
+  background-color: $primary-bg-color;
+  border-bottom: 1px solid $header-border-color;
+}
+
+.header__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
