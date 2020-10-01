@@ -1,0 +1,102 @@
+%subtitle-text {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  text-align: center;
+}
+.features__container {
+  padding: 60px 15px;
+}
+.features__list {
+    margin: 0;
+    padding: 0;
+ @include for-size (tablet) {
+     display: flex;
+     flex-wrap: wrap;
+ } 
+  @include for-size (desktop) {
+     display: flex;
+     flex-wrap: wrap;
+ } 
+}
+.features__item {
+  display: block;
+  &::before {
+  display: block;
+  content: "";
+  height: 120px;
+  border-radius: 4px;
+  background-color: #f5f4fa;
+  background-size: 70px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+  &--icon--antenna::before {
+  background-image: url(../images/antenna.svg);
+}
+  &--icon--clock::before {
+  background-image: url(../images/clock.svg);
+}
+  &--icon--diagram::before {
+  background-image: url(../images/diagram.svg);
+}
+  &--icon--astronaut::before {
+  background-image: url(../images/astronaut.svg);
+}
+}
+@include for-size (mobile) {
+  .features__item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+  }
+@include for-size (tablet) {
+  .features__item {
+    width: calc((100%-30 * 1) / 2);
+    max-width: 354px;
+    &:not(:last-child) {
+    margin-bottom: 0;
+  }
+    &:not(:nth-child(even)) {
+    margin-right: 30px;
+  }
+}
+}
+.features__item:not(:nth-last-child(-n + 2)) {
+  @include for-size (tablet) {
+    margin-bottom: 30px;
+  }
+}
+@include for-size (desktop) {
+  .features__item {
+    width: calc((100%-30 * 3) / 4);
+    max-width: 270px;
+  &:not(:last-child) {
+    margin:0 30px 0 0;
+  }
+  }
+}
+.features__subtitle {
+  margin-top: 30px;
+  margin-bottom: 0;
+  @extend %subtitle-text;
+    color: $title-text-color;
+  @include for-size (tablet) {
+    text-align: left;
+  }
+  @include for-size (desktop) {
+    text-align: left;
+  }
+}
+.activity__subtitle {
+  @extend %subtitle-text;
+}
+.features__text {
+  margin-top: 10px;
+  margin-bottom: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+
+  color: $primary-text-color;
+}

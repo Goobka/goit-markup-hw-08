@@ -1,8 +1,32 @@
 .header {
   background-color: $primary-bg-color;
   border-bottom: 1px solid $header-border-color;
+  position: relative;
 }
 
 .header__container {
-    padding: 16px 0;
+    // min-height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    @include for-size (tablet) {
+      min-height: 80px;
+      justify-content: unset;
+    }
+    @include for-size (desktop) {
+      min-height: 80px;
+      justify-content: unset;
+      padding-top: 0;
+      padding-bottom: 0;
+    }
+}
+.menu-button {
+    @include for-size (tablet) {
+        display:none;
+    }
+    @include for-size (desktop) {
+        display:none;
+    }
 }

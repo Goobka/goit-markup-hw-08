@@ -18,16 +18,20 @@
   <body>
     <header class="header">
       <div class="header__container container">
+        <a href="#" class="logo">Web<span class="logo__text">Studio</span></a>
+        <!-- <button type="button" class="menu-button" aria-expanded="false" aria-controls="menu-container" data-menu-button>
+              <svg width="40" height="40" aria-label="Переключатель мобильного меню">
+                <use class="icon-menu" href="./img/sprite.svg#menu"></use>
+                <use class="icon-close" href="./img/sprite.svg#menu-close"></use>
+              </svg>
+            </button> -->
         <nav class="navigation">
-          <a href="#" class="logo">Web<span class="logo__text">Studio</span></a>
           <ul class="navigation__list list">
             <li class="navigation__item">
-              <a href="./index.html" class="navigation__link">Студия</a>
+              <a href="#" class="navigation__link navigation__link--current">Студия</a>
             </li>
             <li class="navigation__item">
-              <a href="#" class="navigation__link navigation__link--current"
-                >Портфолио</a
-              >
+              <a href="./portfolio.html" class="navigation__link">Портфолио</a>
             </li>
             <li class="navigation__item">
               <a href="#" class="navigation__link">Контакты</a>
@@ -41,16 +45,14 @@
                 <svg class="contacts__icon" width="16" height="12">
                   <use href="./images/sprite.svg#mail"></use>
                 </svg>
-                info@devstudio.com</a
-              >
+                info@devstudio.com</a>
             </li>
             <li class="contacts__item item">
               <a href="tel:+380961111111" class="contacts__link link">
                 <svg class="contacts__icon" width="10" height="16">
                   <use href="./images/sprite.svg#tel"></use>
                 </svg>
-                +38 096 111 11 11</a
-              >
+                +38 096 111 11 11</a>
             </li>
           </ul>
         </address>
@@ -299,9 +301,7 @@
       <div class="footer__container container">
         <div class="footer__flex">
           <div class="footer__left">
-            <a href="" class="logo"
-              >Web<span class="logo__text logo__text--accent">Studio</span></a
-            >
+            <a href="" class="logo">Web<span class="logo__text logo__text--accent">Studio</span></a>
             <address class="address">
               <ul class="address__list list">
                 <li class="address__item address__item--white">
@@ -315,49 +315,29 @@
           <div class="join footer__join">
             <b class="join__text">ПРИСОЕДИНЯЙТЕСЬ</b>
             <ul class="join__list list">
-              <li>
-                <a
-                  href="#"
-                  aria-label="Instagram link"
-                  class="join__link"
-                  target="blank"
-                >
+              <li class="join__item">
+                <a href="#" aria-label="Instagram link" class="join__link" target="blank">
                   <svg class="join__icon" width="20" height="20">
                     <use href="./images/sprite.svg#instagram"></use>
                   </svg>
                 </a>
               </li>
-              <li>
-                <a
-                  href="#"
-                  aria-label="Twitter link"
-                  class="join__link"
-                  target="blank"
-                >
+              <li class="join__item">
+                <a href="#" aria-label="Twitter link" class="join__link" target="blank">
                   <svg class="join__icon" width="20" height="20">
                     <use href="./images/sprite.svg#twitter"></use>
                   </svg>
                 </a>
               </li>
-              <li>
-                <a
-                  href="#"
-                  aria-label="Facebook link"
-                  class="join__link"
-                  target="blank"
-                >
+              <li class="join__item">
+                <a href="#" aria-label="Facebook link" class="join__link" target="blank">
                   <svg class="join__icon" width="20" height="20">
                     <use href="./images/sprite.svg#facebook"></use>
                   </svg>
                 </a>
               </li>
-              <li>
-                <a
-                  href="#"
-                  aria-label="Linkedin link"
-                  class="join__link"
-                  target="blank"
-                >
+              <li class="join__item">
+                <a href="#" aria-label="Linkedin link" class="join__link" target="blank">
                   <svg class="join__icon" width="20" height="20">
                     <use href="./images/sprite.svg#linkedin"></use>
                   </svg>
@@ -368,15 +348,8 @@
           <div class="signup">
             <b class="signup__text">ПОДПИШИТЕСЬ НА РАССЫЛКУ</b>
             <form class="signup__form js-speaker-form">
-              <input
-                class="signup__input"
-                type="email"
-                name="mail"
-                id="mail"
-                placeholder="E-mail"
-                autocomplete="off"
-                required
-              />
+              <input class="signup__input" type="email" name="mail" id="mail" placeholder="E-mail" autocomplete="off"
+                required />
               <button class="signup__button button" type="submit">
                 Подписаться
                 <svg class="signup__icon" width="24" height="24">

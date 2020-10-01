@@ -21,7 +21,13 @@
     <header class="header">
       <div class="header__container container">
         <a href="#" class="logo">Web<span class="logo__text">Studio</span></a>
-        <!-- <nav class="navigation">
+        <!-- <button type="button" class="menu-button" aria-expanded="false" aria-controls="menu-container" data-menu-button>
+          <svg width="40" height="40" aria-label="Переключатель мобильного меню">
+            <use class="icon-menu" href="./img/sprite.svg#menu"></use>
+            <use class="icon-close" href="./img/sprite.svg#menu-close"></use>
+          </svg>
+        </button> -->
+        <nav class="navigation">
           <ul class="navigation__list list">
             <li class="navigation__item">
               <a href="#" class="navigation__link navigation__link--current"
@@ -35,8 +41,8 @@
               <a href="#" class="navigation__link">Контакты</a>
             </li>
           </ul>
-        </nav> -->
-        <!-- <address class="contacts">
+        </nav>
+        <address class="contacts">
           <ul class="contacts__list list">
             <li class="contacts__item item">
               <a href="mailto:info@devstudio.com" class="contacts__link link">
@@ -55,10 +61,10 @@
               >
             </li>
           </ul>
-        </address> -->
+        </address>
       </div>
     </header>
-    <!-- <main>
+    <main>
       <section class="hero">
         <div class="hero__container container">
           <h1 class="hero__title">
@@ -166,7 +172,7 @@
                 <h3 class="employee__title">Игорь Демьяненко</h3>
                 <p class="employee__text">Product Designer</p>
                 <ul class="list socials">
-                  <li>
+                  <li class="socials__item">
                     <a
                       href="#"
                       aria-label="Инстаграм ссылка"
@@ -178,7 +184,7 @@
                       </svg>
                     </a>
                   </li>
-                  <li>
+                  <li class="socials__item">
                     <a
                       href="#"
                       aria-label="Твитер ссылка"
@@ -190,7 +196,7 @@
                       </svg>
                     </a>
                   </li>
-                  <li>
+                  <li class="socials__item">
                     <a
                       href="#"
                       aria-label="Фейсбук ссылка"
@@ -202,7 +208,7 @@
                       </svg>
                     </a>
                   </li>
-                  <li>
+                  <li class="socials__item">
                     <a
                       href="#"
                       aria-label="Линкдин ссылка"
@@ -229,7 +235,7 @@
                 <h3 class="employee__title">Ольга Репина</h3>
                 <p class="employee__text">Frontend Developer</p>
                 <ul class="list socials">
-                  <li>
+                  <li class="socials__item">
                     <a
                       href="#"
                       aria-label="Инстаграм ссылка"
@@ -241,7 +247,7 @@
                       </svg>
                     </a>
                   </li>
-                  <li>
+                  <li class="socials__item">
                     <a
                       href="#"
                       aria-label="Твитер ссылка"
@@ -253,7 +259,7 @@
                       </svg>
                     </a>
                   </li>
-                  <li>
+                  <li class="socials__item">
                     <a
                       href="#"
                       aria-label="Фейсбук ссылка"
@@ -265,7 +271,7 @@
                       </svg>
                     </a>
                   </li>
-                  <li>
+                  <li class="socials__item">
                     <a
                       href="#"
                       aria-label="Линкдин ссылка"
@@ -292,7 +298,7 @@
                 <h3 class="employee__title">Николай Тарасов</h3>
                 <p class="employee__text">Marketing</p>
                 <ul class="list socials">
-                  <li>
+                  <li class="socials__item">
                     <a
                       href=""
                       aria-label="Инстаграм ссылка"
@@ -303,7 +309,7 @@
                       </svg>
                     </a>
                   </li>
-                  <li>
+                  <li class="socials__item">
                     <a
                       href="#"
                       aria-label="Твитер ссылка"
@@ -315,7 +321,7 @@
                       </svg>
                     </a>
                   </li>
-                  <li>
+                  <li class="socials__item">
                     <a
                       href="#"
                       aria-label="Фейсбук ссылка"
@@ -327,7 +333,7 @@
                       </svg>
                     </a>
                   </li>
-                  <li>
+                  <li class="socials__item">
                     <a
                       href="#"
                       aria-label="Линкдин ссылка"
@@ -354,7 +360,7 @@
                 <h3 class="employee__title">Михаил Ермаков</h3>
                 <p class="employee__text">UI Designer</p>
                 <ul class="list socials">
-                  <li>
+                  <li class="socials__item">
                     <a
                       href="#"
                       aria-label="Инстаграм ссылка"
@@ -366,7 +372,7 @@
                       </svg>
                     </a>
                   </li>
-                  <li>
+                  <li class="socials__item">
                     <a
                       href="#"
                       aria-label="Твитер ссылка"
@@ -378,7 +384,7 @@
                       </svg>
                     </a>
                   </li>
-                  <li>
+                  <li class="socials__item">
                     <a
                       href=""
                       aria-label="Фейсбук ссылка"
@@ -389,7 +395,7 @@
                       </svg>
                     </a>
                   </li>
-                  <li>
+                  <li class="socials__item">
                     <a
                       href="#"
                       aria-label="Линкдин ссылка"
@@ -649,6 +655,6 @@
             e.currentTarget.reset();
           });
       })();
-    </script> -->
+    </script>
   </body>
 </html>
