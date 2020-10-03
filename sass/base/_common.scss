@@ -1,14 +1,14 @@
-*,
-*::after,
-*::before {
-  outline: 2px solid teal;
-}
+
 body {
   background-color: $primary-bg-color;
   color: $primary-text-color;
 
   font-family: Roboto, sans-serif;
   letter-spacing: 0.03em;
+  padding-top: 60px;
+   @include for-size(tablet) {
+    padding-top: 80px;
+  }
 }
 .container {
   width: 100%;
@@ -42,12 +42,11 @@ body {
 .button {
   border-radius: 4px;
   padding: 10px 32px;
-  // min-width: 200px;
   border: none;
 
-  color: $secondary-text-color;
-  background-color: $accent-color;
-
+  color: $button-text;
+  background-color: $button-bg;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   font-family: Roboto, sans-serif;
   font-weight: 700;
   font-size: 16px;

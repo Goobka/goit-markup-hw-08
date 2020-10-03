@@ -1,11 +1,14 @@
 .header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10;
   background-color: $primary-bg-color;
   border-bottom: 1px solid $header-border-color;
-  position: relative;
 }
 
 .header__container {
-    // min-height: 60px;
+    min-height: 60px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -20,13 +23,5 @@
       justify-content: unset;
       padding-top: 0;
       padding-bottom: 0;
-    }
-}
-.menu-button {
-    @include for-size (tablet) {
-        display:none;
-    }
-    @include for-size (desktop) {
-        display:none;
     }
 }
