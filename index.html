@@ -148,37 +148,31 @@
           <ul class="activity__list list">
             <li class="activity__item">
               <div class="activity__position">
-                <img
-                  class="img activity__img"
-                  src="./images/tablet.jpg"
-                  alt="Человек работает на планшете за клавиатурой"
-                  height="294"
-                  width="370"
-                />
+                <picture>
+                  <source srcset="./images/tablet.webp 1x, ./images/tablet@2x.webp 2x" type="image/webp" />
+                  <source srcset="./images/tablet.jpg 1x, ./images/tablet@2x.jpg 2x" type="image/jpg" />
+                  <img class="img activity__img" src="./images/tablet.jpg" alt="Человек работает на планшете за клавиатурой" width="370" />
+                </picture>
                 <h3 class="activity__subtitle">ДЕСКТОПНЫЕ ПРИЛОЖЕНИЯ</h3>
               </div>
             </li>
             <li class="activity__item">
               <div class="activity__position">
-                <img
-                  class="img activity__img"
-                  src="./images/laptop.jpg"
-                  alt="Человек с телефоном перед экраном ноутбука"
-                  height="294"
-                  width="370"
-                />
+                <picture>
+                  <source srcset="./images/laptop.webp 1x, ./images/laptop@2x.webp 2x" type="image/webp" />
+                  <source srcset="./images/laptop.jpg 1x, ./images/laptop@2x.jpg 2x" type="image/jpg" />
+                  <img class="img activity__img" src="./images/laptop.jpg" alt="Человек с телефоном перед экраном ноутбука" width="370" />
+                </picture>
                 <h3 class="activity__subtitle">МОБИЛЬНЫЕ ПРИЛОЖЕНИЯ</h3>
               </div>
             </li>
             <li class="activity__item">
               <div class="activity__position">
-                <img
-                  class="img activity__img"
-                  src="./images/screen.jpg"
-                  alt="Рисунок не экране планшета"
-                  height="294"
-                  width="370"
-                />
+                <picture>
+                  <source srcset="./images/screen.webp 1x, ./images/screen@2x.webp 2x" type="image/webp" />
+                  <source srcset="./images/screen.jpg 1x, ./images/screen@2x.jpg 2x" type="image/jpg" />
+                  <img class="img activity__img" src="./images/screen.jpg" alt="Рисунок не экране планшета" width="370"/>
+                </picture>
                 <h3 class="activity__subtitle">ДИЗАЙНЕРСКИЕ РЕШЕНИЯ</h3>
               </div>
             </li>
@@ -190,13 +184,15 @@
           <h2 class="team__title section__title">Наша команда</h2>
           <ul class="employee list">
             <li class="item employee__item">
-              <img
-                class="img"
-                src="./images/igor.jpg"
-                alt="Мужчина в бордовой рубашке в очках"
-                height="260"
-                width="270"
-              />
+              <picture>
+                <source srcset="./images/igor-mobile.webp 1x, ./images/igor-mobile@2x.webp 2x" type="image/webp" media="(max-width: 767px)" />
+                <source srcset="./images/igor-mobile.jpg 1x, ./images/igor-mobile@2x.jpg 2x" type="image/jpg" media="(max-width: 767px)" />
+                <source srcset="./images/igor-tab.jpg 1x, ./images/igor-tab@2x.jpg 2x" type="image/jpg" media="(min-width: 768px)" />
+                <source srcset="./images/igor-tab.webp 1x, ./images/igor-tab@2x.webp 2x" type="image/webp" media="(min-width: 768px)" />
+                <source srcset="./images/igor.jpg 1x, ./images/igor@2x.jpg 2x" type="image/jpg" media="(min-width: 1200px)" />
+                <source srcset="./images/igor.webp 1x, ./images/igor@2x.webp 2x" type="image/webp" media="(min-width: 1200px)" />
+                <img class="img" src="./images/igor.jpg" alt="Мужчина в бордовой рубашке в очках" width="270" />
+              </picture>
               <div class="employee__content">
                 <h3 class="employee__title">Игорь Демьяненко</h3>
                 <p class="employee__text">Product Designer</p>
@@ -253,13 +249,15 @@
               </div>
             </li>
             <li class="item employee__item">
-              <img
-                class="img"
-                src="./images/olga.jpg"
-                alt="Девушка в черном жакете со светлыми волосами"
-                height="260"
-                width="270"
-              />
+              <picture>
+                <source srcset="./images/olga-mobile.webp 1x, ./images/olga-mobile@2x.webp 2x" type="image/webp" media="(max-width: 767px)" />
+                <source srcset="./images/olga-mobile.jpg 1x, ./images/olga-mobile@2x.jpg 2x" type="image/jpg" media="(max-width: 767px)" />
+                <source srcset="./images/olga-tab.jpg 1x, ./images/olga-tab@2x.jpg 2x" type="image/jpg" media="(min-width: 768px)" />
+                <source srcset="./images/olga-tab.webp 1x, ./images/olga-tab@2x.webp 2x" type="image/webp" media="(min-width: 768px)" />
+                <source srcset="./images/olga.jpg 1x, ./images/olga@2x.jpg 2x" type="image/jpg" media="(min-width: 1200px)" />
+                <source srcset="./images/olga.webp 1x, ./images/olga@2x.webp 2x" type="image/webp" media="(min-width: 1200px)" />
+                <img class="img" src="./images/olga.jpg" alt="Девушка в черном жакете со светлыми волосами" width="270" />
+              </picture>
               <div class="employee__content">
                 <h3 class="employee__title">Ольга Репина</h3>
                 <p class="employee__text">Frontend Developer</p>
@@ -316,13 +314,15 @@
               </div>
             </li>
             <li class="item employee__item">
-              <img
-                class="img"
-                src="./images/nikolai.jpg"
-                alt="Мужчина в голубой рубашке с бородой"
-                height="260"
-                width="270"
-              />
+              <picture>
+                <source srcset="./images/nikolai-mobile.webp 1x, ./images/nikolai-mobile@2x.webp 2x" type="image/webp" media="(max-width: 767px)" />
+                <source srcset="./images/nikolai-mobile.jpg 1x, ./images/nikolai-mobile@2x.jpg 2x" type="image/jpg" media="(max-width: 767px)" />
+                <source srcset="./images/nikolai-tab.jpg 1x, ./images/nikolai-tab@2x.jpg 2x" type="image/jpg" media="(min-width: 768px)" />
+                <source srcset="./images/nikolai-tab.webp 1x, ./images/nikolai-tab@2x.webp 2x" type="image/webp" media="(min-width: 768px)" />
+                <source srcset="./images/nikolai.jpg 1x, ./images/nikolai@2x.jpg 2x" type="image/jpg" media="(min-width: 1200px)" />
+                <source srcset="./images/nikolai.webp 1x, ./images/nikolai@2x.webp 2x" type="image/webp" media="(min-width: 1200px)" />
+                <img class="img" src="./images/nikolai.jpg" alt="Мужчина в голубой рубашке с бородой" width="270" />
+              </picture>
               <div class="employee__content">
                 <h3 class="employee__title">Николай Тарасов</h3>
                 <p class="employee__text">Marketing</p>
@@ -378,13 +378,15 @@
               </div>
             </li>
             <li class="item employee__item">
-              <img
-                class="img"
-                src="./images/mihail.jpg"
-                alt="Темноволосый мужчина в черной футболке в очках"
-                height="260"
-                width="270"
-              />
+              <picture>
+                <source srcset="./images/mihail-mobile.webp 1x, ./images/mihail-mobile@2x.webp 2x" type="image/webp" media="(max-width: 767px)" />
+                <source srcset="./images/mihail-mobile.jpg 1x, ./images/mihail-mobile@2x.jpg 2x" type="image/jpg" media="(max-width: 767px)" />
+                <source srcset="./images/mihail-tab.jpg 1x, ./images/mihail-tab@2x.jpg 2x" type="image/jpg" media="(min-width: 768px)" />
+                <source srcset="./images/mihail-tab.webp 1x, ./images/mihail-tab@2x.webp 2x" type="image/webp" media="(min-width: 768px)" />
+                <source srcset="./images/mihail.jpg 1x, ./images/mihail@2x.jpg 2x" type="image/jpg" media="(min-width: 1200px)" />
+                <source srcset="./images/mihail.webp 1x, ./images/mihail@2x.webp 2x" type="image/webp" media="(min-width: 1200px)" />
+                <img class="img" src="./images/mihail.jpg" alt="Темноволосый мужчина в черной футболке в очках" width="270" />
+              </picture>
               <div class="employee__content">
                 <h3 class="employee__title">Михаил Ермаков</h3>
                 <p class="employee__text">UI Designer</p>
