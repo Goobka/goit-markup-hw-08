@@ -4,7 +4,6 @@
     padding: 0;
   }
   @include for-size (desktop) {
-    padding: 0;
     margin-right: 93px;
   }
 }
@@ -85,6 +84,9 @@
 &::placeholder {
   font-size: 16px;
   line-height: 1.25;
+}
+@include for-size (mobile-only) {
+    width: 100%;
 }
 @include for-size (desktop) {
     margin-right: 12px;

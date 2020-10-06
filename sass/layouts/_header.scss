@@ -8,18 +8,23 @@
 }
 
 .header__container {
-    min-height: 60px;
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding-top: 16px;
     padding-bottom: 16px;
+    @include for-size (mobile-only) {
+      height: 60px;
+    }
+    @include for-size (mobile) {
+      height: 60px;
+    }
     @include for-size (tablet) {
-      min-height: 80px;
+      height: 80px;
       justify-content: unset;
     }
     @include for-size (desktop) {
-      min-height: 80px;
+      height: 80px;
       justify-content: unset;
       padding-top: 0;
       padding-bottom: 0;

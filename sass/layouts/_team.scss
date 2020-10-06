@@ -24,6 +24,11 @@
 .employee__item {
     background-color: $primary-bg-color;
  }
+ @include for-size (mobile-only) {
+  .employee__item:not(:last-child) {
+    margin-bottom: 20px;
+  }
+}
 @include for-size (mobile) {
   .employee__item:not(:last-child) {
     margin-bottom: 30px;

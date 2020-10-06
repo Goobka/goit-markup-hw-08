@@ -24,11 +24,9 @@ img {
   @include for-size(mobile) {
     width: 480px;
   }
-
   @include for-size(tablet) {
     width: 768px;
   }
-
   @include for-size(desktop) {
     width: 1200px;
   }
@@ -64,7 +62,7 @@ img {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
-.section__title {
+.title {
   margin-top: 0;
   margin-bottom: 50px;
   color: $title-text-color;

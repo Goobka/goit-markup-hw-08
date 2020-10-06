@@ -4,10 +4,6 @@
     display: unset;
     margin-left: auto;
   }
-  @include for-size (desktop) {
-    display: unset;
-    margin-left: auto;
-  }
 }
 .contacts__list {
   @include for-size (tablet) {

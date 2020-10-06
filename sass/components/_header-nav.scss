@@ -14,8 +14,6 @@
     margin-left: 88px;
   }
   @include for-size (desktop) {
-    display: flex;
-    align-items: center;
     margin-left: 93px;
   }
 }

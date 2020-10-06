@@ -15,10 +15,6 @@
      display: flex;
      flex-wrap: wrap;
  } 
-  @include for-size (desktop) {
-     display: flex;
-     flex-wrap: wrap;
- } 
 }
 .features__item {
   display: block;

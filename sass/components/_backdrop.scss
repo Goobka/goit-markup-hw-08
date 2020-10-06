@@ -33,6 +33,9 @@
   .is-hidden & {
   transform: translate(-50%, -50%) scale(0.9) rotate(0);
 }
+  @include for-size (mobile-only) {
+   width: 100%;
+  }
   @include for-size (tablet) {
     top: 0;
     transform: translate(-50%, 20%) scale(0.9) rotate(0);
